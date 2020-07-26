@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --btn-text: #fef1dd;
+    --primary-color: #1b1e33;
+    --secondary-color: #f59709;
+}
+
+.banner__title {
+    font-size: 3.4rem;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ 
+ /* Navbar */
+
+#mainNav {
+  background-color: var(--primary-color);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+  
+  .navbar-brand {
+    position: relative;
+  }
+  
+  
+  #navbarNav a {
+    color: #ffffff;
+  }
+  
+  .nav-item {
+    margin: 1rem 0.9rem;
+  }
+  
+  #navbarNav a:hover {
+    border-bottom: 0.4px solid #ffffff;
+  }
+  
+  .navbar-dark .navbar-brand {
+    /* font-family: "Caveat", cursive; */
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  
+  @media screen and (min-width: 992px) {
+    #mainNav {
+
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    .nav-item {
+      margin: 1rem 0.9rem;
+    }
+    .btn-navbar {
+      margin-left: 1rem;
+    }
+  }
+
+
+  .project-dropdown {
+    width: 200px;
+    padding: 10px 10px;
+    background-color: #1b1e33;
+    color: white;
+    transition: ease;
+    margin: 0px 10px;
+    /* position: absolute; */
+    display: none;
+    
+}
+
+.project-dropdown li {
+    list-style-type: none;
+   /* text-align: ; */
+   padding: 10px 0px;
+   display: block;
+    /* z-index: 100; */
+}
+.project-dropdown li a {
+    text-decoration: none;
+   font-size: .8rem;
+   
+}
+
+.project-dropdown:hover, .navbar-nav li:hover ul {
+    display: block;
+    z-index: 100;
+}
+
+
+  
+  .banner__hero-tour-detail {
+    background-image: url('../images/three-grid-column/three-grid-header-bg.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    background-attachment: scroll;
+    
+    /* padding-bottom: 6rem; */
+   
+  }
+
+
+/*  NAVIGATION */
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-nav {
+    margin-right: 4rem;
+}
+
+.navbar-nav a {
+    margin-left: 2rem;
+}
+
+nav .dev-evanto {
+    color: rgb(247, 244, 239);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.dev-line1 {
+    color: white;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.dev-line2 {
+    color: white;
+    margin-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.dev-brand {
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.navbar {
+    padding-bottom: 1.5rem;
+}
+
+.navbar ul a {
+    color: white;
+}
+
+.navbar ul a:hover {
+    color: var(--secondary-color);
+}
+
+
+/*  ANIMATIO */
+
+.bounceIn {
+    animation-delay: 1.2s;
+}
+
+
+/*  SIDE BAR */
+
+
+/* The sidepanel menu */
+
+.sidepanel {
+    height: 40rem;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+    opacity: 0.9;
+}
+
+
+/* The sidepanel links */
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtnm {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: 1px solid var(--secondary-color);
+}
+
+.openbtnm:hover {
+    background-color: var(--secondary-color);
+}
+
+.openbtn:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* HERO/HEADER IMAGE */
+
+.hero {
+    background: url('../images/Rectangle 17.png') no-repeat;
+    height: 35rem;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.hr {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.circlea {
+    position: absolute;
+    z-index: 20000;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    clip-path: circle(3rem at 0 100%);
+    transition: 0.5s;
+}
+
+.circleb {
+    position: absolute;
+    z-index: 20000;
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: -66%;
+    clip-path: circle(4rem at 100% 0);
+    transition: 0.5s;
+}
+
+.hero h1 {
+    padding-top: 12rem;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+.hero a {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: inline-block;
+    color: rgb(226, 222, 213);
+}
+
+  /* Navbar */
+
+  @media (max-width: 544px) {  
+  
+    .banner__title {
+        font-size: 1.5rem;
+    }
+    #bag, #search-icon, .openbtn {
+      padding-left: 2.6rem;
+    }
+
+    
+  
+  }
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    .banner__title {
+        font-size: 2.5rem;
+    }
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .banner__title {
+        font-size: 3rem;
+    }
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .banner__title {
+        font-size: 3.5rem;
+    }
+    .project-dropdown {
+        position: absolute;
+    }
+  }

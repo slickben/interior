@@ -1,0 +1,126 @@
+:root {
+  --btn-text: #fef1dd;
+  --primary-color: #1b1e33;
+  --secondary-color: #f59709;
+}
+
+.cart-icon {
+  bottom: 0;
+  left: 10px;
+}
+
+.bg-brand {
+  background-color: #F59709;
+}
+
+.text-brand {
+  color: #F59709;
+}
+
+.three-column-grid-overlay{
+  background-color: rgba(0, 0, 0, 0.596);
+  padding-top: 12rem;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+#filter {
+
+}
+#filter div {
+  position: relative;
+  margin: 0  15px;
+  color: var(--primary-color);;
+}
+
+#filter div:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  top: 5px;
+  border: 1px solid black;
+  /* margin: 0 5px; */
+  margin-left: 12px;
+}
+
+#filter div:last-child:after {
+  border: none;
+}
+
+#filter div:first-child{
+  color: var(--secondary-color);
+}
+
+
+
+@media (max-width: 544px) {  
+  #filter div:nth-last-child(2):after {
+    border: none;
+  }
+  #filter div {
+    font-size: 1rem;
+  }
+
+ 
+
+  #filter div:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    top: 5px;
+    border: 1px solid black;
+    /* margin: 0 5px; */
+    margin-left: 12px;
+  }
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  #filter div {
+    font-size: 1.4rem;
+  }
+  #filter div:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    top: 9px;
+    border: 1px solid black;
+    /* margin: 0 5px; */
+    margin-left: 12px;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  #filter div {
+    font-size: 1.4rem;
+  }
+  
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  #filter div {
+    font-size: 2rem;
+  }
+
+  #filter div:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    top: 13px;
+    border: 1px solid black;
+    /* margin: 0 5px; */
+    margin-left: 12px;
+  }
+}
+
+
+
+
+
